@@ -14,6 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @GetMapping("/{id}")
     public User queryById(@PathVariable("id") Long id) throws Exception {
         Thread.sleep(100000);
